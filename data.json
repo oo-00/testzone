@@ -1,4 +1,8 @@
 {
+	"domain": {
+		"name": "snapshot",
+		"version": "0.1.4"
+	},
 	"types": {
 		"Vote": [
 			{
@@ -27,18 +31,12 @@
 			}
 		]
 	},
-	"primaryType": "Vote",
-	"domain": {
-		"name": "snapshot",
-		"version": "0.1.4",
-		"chainId": 4
-	},
 	"message": {
-		"from": "0x67D0656CEd89095Ba2A01a97601497795B9eC8FA",
 		"space": "weenus",
-		"timestamp": 1626965294,
-		"proposal": "QmSe9WytB6dzz5YZqP4X33P6vLBN9qWABHLyU9nq9Je9hG",
+		"proposal": "QmdXmQN5MY9ygi1TVSVPpLmYQuCu9AHaHP2ZoyaADyEGDh",
 		"choice": 1,
-		"metadata": "{}"
+		"metadata": "{}",
+		"from": "0x67D0656CEd89095Ba2A01a97601497795B9eC8FA",
+		"timestamp": 1626967340
 	}
 }
