@@ -56,28 +56,6 @@ typedData = {
   }
 }
 
-function signMsg(msgParams, from) {
-  web3.currentProvider.sendAsync({
-    method: 'eth_signTypedData',
-    params: [msgParams, from],
-    from: from,
-  }, function (err, result) {
-    if (err) return console.error(err)
-    if (result.error) {
-      return console.error(result.error.message)
-    }
-    const recovered = sigUtil.recoverTypedSignature({
-      data: msgParams,
-      sig: result.result
-    })
-    if (recovered === from ) {
-      alert('Recovered signer: ' + from)
-    } else {
-      alert('Failed to verify signer, got: ' + result)
-    }
-  })
-}
-
 
 var msg = getMessage(typedData).toString('hex');
 console.log(msg);
