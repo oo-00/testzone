@@ -2,8 +2,6 @@ var Web3 = require('web3');
 var web3 = new Web3();
 const { getMessage } = require('eip-712');
 
-console.log("version :", web3.version);
-//version : 1.0.0-beta.36
 typedData = {
   "types": {
     "EIP712Domain": [
